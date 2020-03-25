@@ -137,7 +137,7 @@ def telegram_bot_sendtext(bot_message):
     for bot_chatID in list(my_location_chatid_dict.keys()):
         
         bot_token = 'your token'
-        #bot_chatID = '1016539557'
+        #bot_chatID = ''
         current_message = "Şu an hava durumun:{}".format(str(getWeather(my_location_chatid_dict[bot_chatID])))
         send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + str(bot_chatID) + '&parse_mode=Markdown&text=' +current_message
 
